@@ -4,23 +4,56 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- 페비콘 링크, 부트스트랩 CSS, 부트스트랩 JS -->
-    <link rel="shortcut icon" href="images/rldk.jpg" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="images/하얀색교촌.jpg"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <script defer src="js/bootstrap.bundle.min.js"></script>
 
-    <title>기아 - Movement that inspires ｜ 기아 공식 사이트</title>
-    <style></style>
+    <title>교촌치킨</title>
+    <style>
+      .nav-link {
+        color: #000;
+      }
+      .border-end {
+        padding-right: 30px;
+        padding-left: 30px;
+      }
+      .ms {
+        margin-left: 180px;
+        height: 150px;
+      }
+      .navbar {
+        height: 150px;
+      }
+      #hero-carousel {
+        margin-top: 10px;
+      }
+      .carousel-item.active .col-md-4 {
+        padding: 10px;
+      }
+      .meun-name {
+        font-size: 1.2rem;
+        color: white;
+        background-color: black;
+        margin-top: 5px;
+        padding: 2px 5px;
+        border-radius: 30%;
+      }
+    </style>
   </head>
 
   <body>
     <!-- 네브바 시작 -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-danger fixed-top">
-      <div class="container-fluid ms-5 mt-2 mb-2">
+    <nav class="navbar navbar-expand-md navbar-dark bg-white">
+      <div class="container-fluid ms-5 mt-2 mb-2 me-3">
         <a class="navbar-brand" href="#">
           <img
-            class="me-1"
+            class="ms"
             height="120px"
-            src="images/부산아이파크.png"
+            src="images/h1_logo_new2022.png"
             alt=""
           />
         </a>
@@ -35,41 +68,365 @@
         </button>
         <!-- 매뉴 -->
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
+          <ul class="navbar-nav me-3">
             <li class="nav-item">
-              <a class="nav-link" href="#">NEWS</a>
+              <a class="nav-link" href="#"
+                ><div class="border-end">
+                  <h4><strong>메뉴</strong></h4>
+                </div></a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">MATCH</a>
+              <a class="nav-link" href="#"
+                ><div class="border-end">
+                  <h4><strong>매장안내</strong></h4>
+                </div></a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">TICKET</a>
+              <a class="nav-link" href="#"
+                ><div class="border-end">
+                  <h4><strong>이벤트</strong></h4>
+                </div></a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">MEDIA</a>
+              <a class="nav-link" href="#"
+                ><div class="border-end">
+                  <h4><strong>주문</strong></h4>
+                </div></a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">PRO</a>
+              <a class="nav-link" href="#"
+                ><div class="border-end">
+                  <h4><strong>쿠폰</strong></h4>
+                </div></a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">YOUTH</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">ACADEMY</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">CLUB</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">FAN ZONE</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">SHOP</a>
+              <a class="nav-link" href="#">
+                <h4><strong>교촌스토리</strong></h4></a
+              >
             </li>
           </ul>
         </div>
       </div>
     </nav>
     <!-- 네브바 끝 -->
+    <!-- 캐로셀 섹션 시작 -->
+    <section id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#hero-carousel"
+          data-bs-slide-to="0"
+          class="active"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#hero-carousel"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#hero-carousel"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#hero-carousel"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#hero-carousel"
+          data-bs-slide-to="4"
+          aria-label="Slide 5"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#hero-carousel"
+          data-bs-slide-to="5"
+          aria-label="Slide 6"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#hero-carousel"
+          data-bs-slide-to="6"
+          aria-label="Slide 7"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#hero-carousel"
+          data-bs-slide-to="7"
+          aria-label="Slide 8"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#hero-carousel"
+          data-bs-slide-to="8"
+          aria-label="Slide 9"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#hero-carousel"
+          data-bs-slide-to="9"
+          aria-label="Slide 10"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#hero-carousel"
+          data-bs-slide-to="10"
+          aria-label="Slide 11"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#hero-carousel"
+          data-bs-slide-to="11"
+          aria-label="Slide 12"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#hero-carousel"
+          data-bs-slide-to="12"
+          aria-label="Slide 13"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#hero-carousel"
+          data-bs-slide-to="13"
+          aria-label="Slide 14"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#hero-carousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">이전</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#hero-carousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">다음</span>
+        </button>
+        <div class="carousel-item active c-item">
+          <img
+            src="images/배너1.jpg"
+            class="d-block w-100 c-img"
+            alt="Slide 1"
+            herf="#"
+          />
+          <div class="carousel-caption top-0 mt-4"></div>
+        </div>
+        <div class="carousel-item c-item">
+          <img
+            src="images/배너2.jpg"
+            class="d-block w-100 c-img"
+            alt="Slide 2"
+          />
+          <div class="carousel-caption top-0 mt-4"></div>
+        </div>
+        <div class="carousel-item c-item">
+          <img
+            src="images/배너3.jpg"
+            class="d-block w-100 c-img"
+            alt="Slide 3"
+          />
+        </div>
+        <div class="carousel-item c-item">
+          <img
+            src="images/배너4.jpg"
+            class="d-block w-100 c-img"
+            alt="Slide 4"
+          />
+        </div>
+        <div class="carousel-item c-item">
+          <img
+            src="images/배너5.jpg"
+            class="d-block w-100 c-img"
+            alt="Slide 5"
+          />
+        </div>
+        <div class="carousel-item c-item">
+          <img
+            src="images/배너6.jpg"
+            class="d-block w-100 c-img"
+            alt="Slide 6"
+          />
+        </div>
+        <div class="carousel-item c-item">
+          <img
+            src="images/배너7.jpg"
+            class="d-block w-100 c-img"
+            alt="Slide 7"
+          />
+        </div>
+        <div class="carousel-item c-item">
+          <img
+            src="images/배너8.jpg"
+            class="d-block w-100 c-img"
+            alt="Slide 8"
+          />
+        </div>
+        <div class="carousel-item c-item">
+          <img
+            src="images/배너9.jpg"
+            class="d-block w-100 c-img"
+            alt="Slide 9"
+          />
+        </div>
+        <div class="carousel-item c-item">
+          <img
+            src="images/배너10.jpg"
+            class="d-block w-100 c-img"
+            alt="Slide 10"
+          />
+        </div>
+        <div class="carousel-item c-item">
+          <img
+            src="images/배너11.png"
+            class="d-block w-100 c-img"
+            alt="Slide 11"
+          />
+        </div>
+        <div class="carousel-item c-item">
+          <img
+            src="images/배너12.jpg"
+            class="d-block w-100 c-img"
+            alt="Slide 12"
+          />
+        </div>
+        <div class="carousel-item c-item">
+          <img
+            src="images/배너13.jpg"
+            class="d-block w-100 c-img"
+            alt="Slide 13"
+          />
+        </div>
+        <div class="carousel-item c-item">
+          <img
+            src="images/배너14.jpg"
+            class="d-block w-100 c-img"
+            alt="Slide 14"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- 캐로셀 섹션 끝 -->
+    <!-- menu탭 시작 -->
+    <section
+      id="multi-image-carousel"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="container">
+        <div class="text-center">
+          <h1 class="fw-bolder text-uppercase text-center mt-5">MENU</h1>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row justify-content-center">
+                <div class="col-md-4 text-center">
+                  <a class="nav-link" href="#"
+                    ><img
+                      src="images/교촌-허니-콤보.png"
+                      alt="Image 1"
+                      class="img-fluid"
+                    />
+                    <p class="meun-name">허니콤보</p></a
+                  >
+                </div>
+                <div class="col-md-4 text-center">
+                  <a class="nav-link" href="#">
+                    <img
+                      src="images/교촌옥수수오리지날_list(1).png"
+                      alt="Image 2"
+                      class="img-fluid"
+                    />
+                    <p class="meun-name">교촌옥수수오리지날</p></a
+                  >
+                </div>
+                <div class="col-md-4 text-center">
+                  <a class="nav-link" href="#">
+                    <img
+                      src="images/교촌옥수수통안심_list(1).png"
+                      alt="Image 3"
+                      class="img-fluid"
+                    />
+                    <p class="meun-name">교촌옥수수통안심</p></a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row justify-content-center">
+                <div class="col-md-4 text-center">
+                  <a class="nav-link" href="#">
+                    <img
+                      src="images/반반점보윙_교촌+레드_list(1).png"
+                      alt="Image 4"
+                      class="img-fluid"
+                    />
+                    <p class="meun-name">반반점보윙(교촌/레드)</p></a
+                  >
+                </div>
+                <div class="col-md-4 text-center">
+                  <a class="nav-link" href="#">
+                    <img
+                      src="images/반반점보윙_레드+허니_list(1).png"
+                      alt="Image 5"
+                      class="img-fluid"
+                    />
+                    <p class="meun-name">반반점보윙(레드/허니갈릭)</p></a
+                  >
+                </div>
+                <div class="col-md-4 text-center">
+                  <a class="nav-link" href="#">
+                    <img
+                      src="images/38414_레허반반순살_list(1).png"
+                      alt="Image 6"
+                      class="img-fluid"
+                    />
+                    <p class="meun-name">레허반반순살</p></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a
+        class="carousel-control-prev"
+        href="#multi-image-carousel"
+        role="button"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#multi-image-carousel"
+        role="button"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </a>
+    </section>
+    <!-- menu탭 끝 -->
   </body>
 </html>
