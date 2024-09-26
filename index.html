@@ -23,11 +23,11 @@
       }
       .ms {
         margin-left: 180px;
-        height: 150px;
-      }
-      .navbar {
-        height: 150px;
-      }
+        height: auto;}
+      
+       .navbar {
+        min-height: auto; }
+      
       #hero-carousel {
         margin-top: 10px;
       }
@@ -36,18 +36,19 @@
       }
       .meun-name {
         font-size: 1.2rem;
-        color: white;
-        background-color: black;
+        color: rgb(12, 11, 11);        
         margin-top: 5px;
-        padding: 2px 5px;
-        border-radius: 30%;
+        padding: 2px 5px; 
       }
+      
+      
     </style>
   </head>
 
   <body>
     <!-- 네브바 시작 -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-white">
+    <nav class="navbar navbar-expand-md bg-white"
+    data-bs-theme="dark">
       <div class="container-fluid ms-5 mt-2 mb-2 me-3">
         <a class="navbar-brand" href="#">
           <img
@@ -63,6 +64,8 @@
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -344,8 +347,9 @@
                       alt="Image 1"
                       class="img-fluid"
                     />
-                    <p class="meun-name">허니콤보</p></a
-                  >
+                    <div style="width: 400px" class="border rounded-pill">
+                      <p class="meun-name">허니콤보</p></a>
+                </div>
                 </div>
                 <div class="col-md-4 text-center">
                   <a class="nav-link" href="#">
@@ -354,8 +358,9 @@
                       alt="Image 2"
                       class="img-fluid"
                     />
+                    <div style="width: 400px" class="border rounded-pill">
                     <p class="meun-name">교촌옥수수오리지날</p></a
-                  >
+                  ></div>
                 </div>
                 <div class="col-md-4 text-center">
                   <a class="nav-link" href="#">
@@ -364,8 +369,9 @@
                       alt="Image 3"
                       class="img-fluid"
                     />
+                    <div style="width: 400px" class="border rounded-pill">
                     <p class="meun-name">교촌옥수수통안심</p></a
-                  >
+                  ></div>
                 </div>
               </div>
             </div>
@@ -379,8 +385,9 @@
                       alt="Image 4"
                       class="img-fluid"
                     />
+                    <div style="width: 400px" class="border rounded-pill">
                     <p class="meun-name">반반점보윙(교촌/레드)</p></a
-                  >
+                  ></div>
                 </div>
                 <div class="col-md-4 text-center">
                   <a class="nav-link" href="#">
@@ -389,8 +396,9 @@
                       alt="Image 5"
                       class="img-fluid"
                     />
+                    <div style="width: 400px" class="border rounded-pill">
                     <p class="meun-name">반반점보윙(레드/허니갈릭)</p></a
-                  >
+                  ></div>
                 </div>
                 <div class="col-md-4 text-center">
                   <a class="nav-link" href="#">
@@ -399,8 +407,9 @@
                       alt="Image 6"
                       class="img-fluid"
                     />
+                    <div style="width: 400px" class="border rounded-pill">
                     <p class="meun-name">레허반반순살</p></a
-                  >
+                  ></div>
                 </div>
               </div>
             </div>
@@ -428,5 +437,33 @@
       </a>
     </section>
     <!-- menu탭 끝 -->
+    <div class="container-fluid bg-warning">
+      <div class="d-flex justify-content-center mt-5">
+          <div class="container mt-5">
+              <div class="row">                  
+                  <div class="col-md-6">
+                      <h3>Store Search</h3>
+                      <div class="input-group mb-3 mt-3" style="max-width: 400px;">
+                          <input type="text" class="form-control" placeholder="매장명 또는 지역을 입력" aria-label="매장명 또는 지역을 입력" aria-describedby="button-addon2">
+                          <button class="btn btn-outline-secondary" type="button" id="button-addon2">검색</button>
+                      </div>
+                  </div>
+
+                  <div class="col-md-6">
+                      <div class="news-section">
+                          <h3 class="news-title">KYOCHON NEWS</h3>
+                          <ul class="list-group">
+                              <li class="list-group-item">교촌치킨 신메뉴 출시!</li>
+                              <li class="list-group-item">할인 이벤트 안내</li>
+                              <li class="list-group-item">매장 오픈 소식</li>
+                              <li class="list-group-item">고객 감사 행사 안내</li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+    
   </body>
 </html>
