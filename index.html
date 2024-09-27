@@ -28,7 +28,7 @@
         /* 마우스 오버 시 배경 색상 변경 */
       }
       .meun-name {
-        font-size: 1.3rem; /* 글자 크기 조정 */
+        font-size: 1.2rem; /* 글자 크기 조정 */
         /* 글자 두껍게 */
         color: white; /* 기본 글자 색상 */
         padding: 5px 10px; /* 글자와 보더 사이의 패딩 */
@@ -50,6 +50,29 @@
         /* 테두리 색상 설정 */
         margin: auto; /* 중앙 정렬 */
         display: inline-block; /* 배경 크기 조정 */
+      }
+      .news-section {
+        border: hidden;
+      }
+      .custom-link {
+        color: black; /* 텍스트 색상을 검정으로 변경 */
+
+        text-decoration: none; /* 밑줄 제거 */
+      }
+
+      .custom-link:hover {
+        color: gray; /* 마우스를 올렸을 때 텍스트 색상 변경 */
+
+        text-decoration: none; /* 호버 시에도 밑줄 유지 안함 */
+      }
+      .list-group-item {
+        border: hidden;
+        background-color: #ffc107;
+      }
+      .text-right {
+        display: block; /* <small> 요소를 블록 요소로 변경 */
+
+        text-align: right; /* 오른쪽 정렬 */
       }
     </style>
   </head>
@@ -431,12 +454,13 @@
       </a>
     </section>
     <!-- menu탭 끝 -->
+    <!-- 매장찾기, 교촌뉴스 탭 시작-->
     <div class="container-fluid bg-warning">
       <div class="d-flex justify-content-center mt-5">
         <div class="container mt-5">
           <div class="row">
             <div class="col-md-6">
-              <h3>Store Search</h3>
+              <h2>Store Search</h2>
               <div class="input-group mb-3 mt-3" style="max-width: 400px">
                 <input
                   type="text"
@@ -450,19 +474,43 @@
                   type="button"
                   id="button-addon2"
                 >
-                  검색
+                  🔍
                 </button>
               </div>
             </div>
 
             <div class="col-md-6">
               <div class="news-section">
-                <h3 class="news-title">KYOCHON NEWS</h3>
-                <ul class="list-group">
-                  <li class="list-group-item">교촌치킨 신메뉴 출시!</li>
-                  <li class="list-group-item">할인 이벤트 안내</li>
-                  <li class="list-group-item">매장 오픈 소식</li>
-                  <li class="list-group-item">고객 감사 행사 안내</li>
+                <h2 class="news-title">KYOCHON NEWS</h2>
+                <ul class="list-group" style="border: hidden">
+                  <li class="list-group-item">
+                    <a href="#" class="custom-link"
+                      ><strong>위치정보 이용약관 개정 안내</strong>
+                      <small class="text-right"> 2024-06-10</small></a
+                    >
+                  </li>
+
+                  <li class="list-group-item">
+                    <a href="#" class="custom-link"
+                      ><strong
+                        >개인정보보호법 개정안에 따른 휴면 정책 변경
+                        안내</strong
+                      >
+                      <small class="text-right"> 2024-04-08</small></a
+                    >
+                  </li>
+                  <li class="list-group-item">
+                    <a href="#" class="custom-link"
+                      ><strong>위치정보 이용약관 개정 안내</strong>
+                      <small class="text-right"> 2024-01-22</small></a
+                    >
+                  </li>
+                  <li class="list-group-item">
+                    <a href="#" class="custom-link"
+                      ><strong>개인위치정보 처리방침 개정 안내</strong>
+                      <small class="text-right"> 2024-01-22</small></a
+                    >
+                  </li>
                 </ul>
               </div>
             </div>
@@ -470,5 +518,6 @@
         </div>
       </div>
     </div>
+    <!-- 매장찾기, 교촌뉴스 탭 끝-->
   </body>
 </html>
