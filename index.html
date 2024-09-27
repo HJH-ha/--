@@ -143,11 +143,68 @@
             <li class="nav-item">
               <a href="#contact" class="nav-link">교촌스토리</a>
             </li>
+            <button
+              class="btn btn-primary ms-5"
+              data-bs-toggle="modal"
+              data-bs-target="#booking-modal"
+            >
+              로그인
+            </button>
           </ul>
         </div>
       </div>
     </nav>
     <!-- 네브바 끝 -->
+    <!-- 로그인 모달창 시작 -->
+    <section class="modal fade" tabindex="-1" id="booking-modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">로그인</h3>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="form-floating mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="floatingInput"
+                placeholder="name@example.com"
+              />
+              <!-- 폼 > 플로팅라벨에 메일 -->
+              <label for="floatingInput">ID</label>
+            </div>
+            <!-- 폼 > 플로팅라벨에 셀렉트 -->
+            <div class="form-floating">
+              <input
+                type="password"
+                class="form-control"
+                id="floatingPassword"
+                placeholder="Password"
+              />
+              <label for="floatingPassword">Password</label>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              취소
+            </button>
+            <button type="button" class="btn btn-primary">로그인</button>
+            <button type="button" class="btn btn-primary">회원가입</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 로그인 모달창 끝 -->
     <!-- 캐로셀 섹션 시작 -->
     <section id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
