@@ -24,8 +24,6 @@
       }
       .nav-link:hover {
         color: #ff6600; /* 마우스 오버 시 글자 색상 변경 */
-
-        /* 마우스 오버 시 배경 색상 변경 */
       }
       .meun-name {
         font-size: 1.2rem; /* 글자 크기 조정 */
@@ -47,7 +45,7 @@
         align-items: center;
         background-color: black; /* 배경색 설정 (연한 회색) */
         padding: 10px; /* 배경과 텍스트 사이의 간격 조정 */
-        /* 테두리 색상 설정 */
+
         margin: auto; /* 중앙 정렬 */
         display: inline-block; /* 배경 크기 조정 */
       }
@@ -73,6 +71,28 @@
         display: block; /* <small> 요소를 블록 요소로 변경 */
 
         text-align: right; /* 오른쪽 정렬 */
+      }
+      .open {
+        color: black; /* 텍스트 색상을 검정으로 변경 */
+
+        text-decoration: none; /* 밑줄 제거 */
+      }
+      .foot {
+        display: inline-block;
+      }
+      .foot:last-child {
+        border-right: none; /* 마지막 요소의 보더 제거 */
+      }
+      .finish {
+        color: white; /* 텍스트 색상을 검정으로 변경 */
+
+        text-decoration: none; /* 밑줄 제거 */
+        font-size: 13px;
+      }
+      footer img {
+        height: 40px;
+        width: 40px;
+        margin: 10px;
       }
     </style>
   </head>
@@ -519,5 +539,87 @@
       </div>
     </div>
     <!-- 매장찾기, 교촌뉴스 탭 끝-->
+    <!-- 가맹점 개설 안내 탭 시작 -->
+    <section class="d-flex justify-content-evenly">
+      <div class="container-fluid">
+        <h1 class="fw-bolder text-uppercase text-center mt-5">
+          가맹점 개설 안내
+        </h1>
+        <p class="text-center mb-5">교촌 F&B의 가족으로 모시고자 합니다</p>
+        <div class="row fs-4">
+          <div class="col-lg-4 text-center">
+            <i class="bi bi-airplane-fill me-2"></i>
+            <a href="#" class="open">
+              <img src="images/사업전망.svg" alt="" />
+              <p class="text-align">사업전망🔎</p></a
+            >
+          </div>
+          <div class="col-lg-4 text-center">
+            <i class="bi bi-wallet-fill me-2"></i>
+            <a href="#" class="open">
+              <img src="images/개설절차.svg" alt="" />
+              <p class="text-align">개설절차🔎</p></a
+            >
+          </div>
+          <div class="col-lg-4 text-center">
+            <i class="bi bi-patch-check-fill me-2"></i>
+            <a href="#" class="open">
+              <img src="images/상담창구.svg" alt="" />
+              <div class="oval">
+                <p class="text-align">상담창구🔎</p>
+              </div></a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 가맹점 개설 안내 탭 시작 -->
+    <!-- 푸터 섹션 추가 -->
+    <footer class="bg-dark py-5 mt-5">
+      <div class="container text-light text-center">
+        <a href="#" class="finish"
+          ><div class="foot border-end">이용약관</div></a
+        >
+        <a href="#" class="finish"
+          ><div class="foot border-end">개인정보처리방침</div></a
+        >
+        <a href="#" class="finish"
+          ><div class="foot border-end">개인위치정보처리방침</div></a
+        >
+        <a href="#" class="finish"
+          ><div class="foot border-end">위치정보 이용약관</div></a
+        >
+        <a href="#" class="finish"
+          ><div class="foot border-end">영상정보처리기기 운영관리 방침</div></a
+        >
+        <a href="#" class="finish"
+          ><div class="foot border-end">이메일 무단수집거부</div></a
+        >
+        <a href="#" class="finish ms-3"> 찾아오시는길</a>
+
+        <br /><br /><br /><br />
+        <div>
+          <h3>고객센터:080-320-3000</h3>
+          <h3>전화주문:1577-1991</h3>
+        </div>
+        <div>
+          <img src="images/free-icon-facebook-145802.png" alt="" />
+          <img src="images/free-icon-instagram-4138124.png" alt="" />
+          <img src="images/free-icon-youtube-4494485.png" alt="" />
+          <img src="images/free-icon-twitter-3670151.png" alt="" />
+        </div>
+        <p>
+          사업장소재지 : 39852 경상북도 칠곡군 가산면 송신로 78 본사주소 : 13453
+          경기도 성남시 수정구 금토로80번길 15-3(금토동) 교촌1991빌딩 상호명 :
+          교촌에프앤비(주) 대표이사 : 송종화 대표번호 : 031-371-3500
+          사업자등록번호 : 513-81-16574 통신판매업신고 :
+          2012-경상북도칠곡-00023호 개인정보보호책임자 : 신용우 영업시간 :
+          12:00~23:30
+        </p>
+
+        <small> Copyright 2015 &copy; KYOCHON F&B. All rights reserved.</small>
+      </div>
+    </footer>
+    <!-- 푸터 섹션 끝 -->
   </body>
 </html>
